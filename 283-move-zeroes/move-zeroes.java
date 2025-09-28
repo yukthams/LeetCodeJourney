@@ -1,5 +1,8 @@
 class Solution {
     public void moveZeroes(int[] nums) {
+        if (nums.length < 2) {
+            return;
+        }
         int insertPos = 0;
         int n=nums.length;
         // Step 1: move all non-zero elements to the front
